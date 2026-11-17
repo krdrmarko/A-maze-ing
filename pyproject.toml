@@ -1,0 +1,27 @@
+[project]
+name = "amazeing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "makrivor", email = "krdrmarko@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+amazeing = "amazeing:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.10.1",
+    "flake8>=7.5.0",
+    "mypy>=2.4.1",
+]
+
+[tool.black]
+line-length = 79
