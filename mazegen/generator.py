@@ -379,11 +379,12 @@ class MazeGenerator:
         return path
 
 
-generator = MazeGenerator(config)
-maze = generator.generate()
-path = generator.bfs()
+if __name__ == "__main__":
+    generator = MazeGenerator(config)
+    maze = generator.generate()
+    path = generator.bfs()
 
-if path is not None:
-    generator.save_maze("maze.txt", path)
-else:
-    print("No path found")
+    if path is not None:
+        generator.save_maze("maze.txt", path)
+    else:
+        print("No path found")

@@ -1,20 +1,27 @@
+# Python
 __pycache__/
+*.py[cod]
 .venv/
+venv/
+
+# Tool caches
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
-.DS_Store
-data/processed/
-data/output/
-data/raw/
-.env
-*.egg-info/
-dist/
-build/
 .coverage
 htmlcov/
-*.safetensors
-*.bin
-*.pt
-*.pth
-*.gguf
+
+# Build artifacts (the final mazegen-*.whl / .tar.gz at the repo root
+# are committed on purpose, so they are NOT ignored)
+build/
+dist/
+*.egg-info/
+
+# Generated maze output
+maze.txt
+
+# Misc
+.DS_Store
+.env
+.vscode/
+.idea/
